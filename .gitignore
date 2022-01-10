@@ -7,3 +7,8 @@
 /etharb_tx/*
 !/etharb_tx/*.tcl
 !/etharb_tx/*.cpp
+
+!/eth_tstsrc/
+/eth_tstsrc/*
+!/eth_tstsrc/*.tcl
+!/eth_tstsrc/*.cpp
