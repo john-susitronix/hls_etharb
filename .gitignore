@@ -19,3 +19,7 @@
 !/etharb_test/*.tcl
 !/etharb_test/*.xdc
 !/etharb_test/*.v
+
+!/python/
+/python/*
+!/python/*.py
