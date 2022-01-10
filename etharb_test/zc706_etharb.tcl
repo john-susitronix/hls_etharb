@@ -97,5 +97,5 @@ set_property -name "steps.write_bitstream.args.verbose" -value "0" -objects $obj
 
 current_run -implementation [get_runs impl_1]
 
-
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 

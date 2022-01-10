@@ -1,0 +1,41 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+	&etharb_tx_0 {
+	     compatible = "susi,etharb";
+	};
+
+        &axi_ethernet_0 {
+	     axistream-connected = <0x80>;
+      	     axistream-control-connected = <0x80>;
+	     phandle = <0x81>;
+	     xlnx,include-dre;
+	     phy-handle = <&phy0>;
+	     xlnx,has-mdio = <0x1>;
+	     phy-mode = "rgmii-rxid";
+	     mdio {
+	         #address-cells = <1>;
+	         #size-cells = <0>;
+	         phy0: phy@0 {
+	             compatible = "marvell,88e1510";
+	             device_type = "ethernet-phy";
+	             reg = <0>;
+	         };
+	     };
+	};
+
+        &axi_ethernet_0_dma {
+             axistream-connected = <0x81>;
+      	     axistream-control-connected = <0x81>;
+	     phandle = <0x80>;
+      	     compatible = "xlnx,eth-dma";
+      	     xlnx,include-dre;
+      	     /delete-property/ xlnx,addrwidth;
+       	     /delete-property/ xlnx,include-sg;
+       	     /delete-property/ xlnx,sg-include-stscntrl-strm;
+       	     /delete-property/ xlnx,sg-length-width;
+       	     // /delete-node/ dma-channel@40400000;
+       	     // /delete-node/ dma-channel@40400030;
+        };
+

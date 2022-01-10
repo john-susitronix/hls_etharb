@@ -23,3 +23,8 @@
 !/python/
 /python/*
 !/python/*.py
+
+!/linux/
+/linux/*
+!/linux/*.dtsi
+!/linux/recipes-kernel/
