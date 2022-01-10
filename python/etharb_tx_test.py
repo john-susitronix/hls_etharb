@@ -21,6 +21,11 @@ devmem = open('/dev/mem', 'r+b')
 etharb = mmap.mmap(devmem.fileno(), 0x10000, offset=getEtharbOffset())
 
 srcmac,_,srcip,_,_ = getSrcNic(iface=IFACE)
+
+#bump both src mac and IP up one (check first....) to avoid IVP4 ID collision
+srcmac += 1
+srcip += 1
+
 dstmac = getMacByIp(DSTIP)
 dstip = ipStr2Int(DSTIP)
 
