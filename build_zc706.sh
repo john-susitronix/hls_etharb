@@ -9,7 +9,7 @@ vivado_hls script.tcl
 popd
 
 pushd etharb_test
-vivado -source zc706_etharb.tcl
+vivado mode batch -source zc706_etharb.tcl
 popd
 
 pushd linux
