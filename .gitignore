@@ -2,6 +2,7 @@
 
 !.gitignore
 !README.md
+!/build_zc706.sh
 
 !/etharb_tx/
 /etharb_tx/*
@@ -12,3 +13,9 @@
 /eth_tstsrc/*
 !/eth_tstsrc/*.tcl
 !/eth_tstsrc/*.cpp
+
+!/etharb_test/
+/etharb_test/*
+!/etharb_test/*.tcl
+!/etharb_test/*.xdc
+!/etharb_test/*.v

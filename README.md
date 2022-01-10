@@ -1,8 +1,6 @@
 # ETHARB_TX
 
-this is a test.
+vivado & vivado_hls 2019.1
 
-2019.1
+./build_zc706.sh
 
-cd etharb_tx
-vivado_hls script.tcl
