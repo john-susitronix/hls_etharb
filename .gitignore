@@ -27,4 +27,6 @@
 !/linux/
 /linux/*
 !/linux/*.dtsi
+!/linux/config_sdcard
 !/linux/recipes-kernel/
+
