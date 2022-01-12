@@ -39,7 +39,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 }
 
 set obj [get_filesets sources_1]
-set_property "ip_repo_paths" "[file normalize "$origin_dir/../etharb_tx"] [file normalize "$origin_dir/../eth_tstsrc"]" $obj
+set_property "ip_repo_paths" "[file normalize "$origin_dir/../etharb_tx"] [file normalize "$origin_dir/../etharb_rx"] [file normalize "$origin_dir/../eth_tstsrc"]" $obj
 update_ip_catalog -rebuild
 
 source $origin_dir/design_main.tcl

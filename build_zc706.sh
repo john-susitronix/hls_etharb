@@ -12,7 +12,7 @@ while [ -n "$1" ]; do
     shift
 done
 
-declare -a ListOfHls=("etharb_tx" "eth_tstsrc")
+declare -a ListOfHls=("etharb_tx" "etharb_rx" "eth_tstsrc")
 for n in ${ListOfHls[@]}; do
     pushd $n
     if [ ! -d "$n" ] || [ "$force" -gt 0 ]; then

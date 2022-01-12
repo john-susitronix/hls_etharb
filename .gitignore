@@ -9,6 +9,11 @@
 !/etharb_tx/*.tcl
 !/etharb_tx/*.cpp
 
+!/etharb_rx/
+/etharb_rx/*
+!/etharb_rx/*.tcl
+!/etharb_rx/*.cpp
+
 !/eth_tstsrc/
 /eth_tstsrc/*
 !/eth_tstsrc/*.tcl
