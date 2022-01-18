@@ -12,6 +12,15 @@ while [ -n "$1" ]; do
     shift
 done
 
+if ! command -v vivado -v &> /dev/null; then
+    echo "source vivado"
+    exit 1
+fi
+if ! command -v petalinux-config -h &> /dev/null; then
+    echo "source petalinux"
+    exit 1
+fi
+
 declare -a ListOfHls=("etharb_tx" "eth_tstsrc")
 for n in ${ListOfHls[@]}; do
     pushd $n
@@ -23,7 +32,7 @@ done
 
 pushd etharb_test
 if [ ! -d "./zc706_etharb" ] || [ "$force" -gt 0 ]; then
-    vivado -mode batch -source zc706_etharb.tcl -force
+    vivado -mode batch -source zc706_etharb.tcl
 fi
 popd
 
