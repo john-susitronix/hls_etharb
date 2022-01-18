@@ -4,15 +4,18 @@
 !README.md
 !/build_zc706.sh
 
+!/cpp/
+/cpp/*
+!/cpp/*.cpp
+!/cpp/*.h
+
 !/etharb_tx/
 /etharb_tx/*
 !/etharb_tx/*.tcl
-!/etharb_tx/*.cpp
 
 !/eth_tstsrc/
 /eth_tstsrc/*
 !/eth_tstsrc/*.tcl
-!/eth_tstsrc/*.cpp
 
 !/etharb_test/
 /etharb_test/*

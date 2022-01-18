@@ -1,6 +1,7 @@
 open_project etharb_tx
 set_top etharb_tx
-add_files etharb_tx.cpp
+add_files ../cpp/etharb_tx.cpp
+add_files ../cpp/etharb_common.h
 open_solution "solution1"
 set_part zynq -tool vivado
 create_clock -period 8 -name default
