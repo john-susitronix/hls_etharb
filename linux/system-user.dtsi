@@ -35,7 +35,7 @@
        	     /delete-property/ xlnx,include-sg;
        	     /delete-property/ xlnx,sg-include-stscntrl-strm;
        	     /delete-property/ xlnx,sg-length-width;
-       	     // /delete-node/ dma-channel@40400000;
-       	     // /delete-node/ dma-channel@40400030;
+	     /delete-node/ dma-channel@40400000;
+       	     /delete-node/ dma-channel@40400030;
         };
 

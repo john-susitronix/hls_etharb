@@ -57,8 +57,7 @@ void etharb_tx(
 
   ap_axis_dma_t tmp;
 
-  if (state == IDLE_STATE && !TXC_IN.empty())
-    {
+  if (state == IDLE_STATE && !TXC_IN.empty()) {
       for (int i = 0; i < 6; i++) {
 #pragma HLS PIPELINE
 	TXC_IN >> tmp;

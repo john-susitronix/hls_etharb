@@ -15,7 +15,7 @@ void eth_tstsrc( AXIS_BYP& BYP_OUT, uint16_t *nbytes, bool *jumbo)
 
   static uint32_t counter = 0;
 
-  ap_axis_ubyp_t byp;
+  ap_axis_byp_t byp;
 
   uint16_t abytes;
 
