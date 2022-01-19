@@ -30,8 +30,8 @@
 
 open_project eth_tstsrc
 set_top eth_tstsrc
-add_files ../cpp/eth_tstsrc.cpp
-add_files ../cpp/etharb_common.h
+add_files ../hls/eth_tstsrc.cpp
+add_files ../hls/etharb_common.h
 open_solution "solution1"
 set_part zynq -tool vivado
 create_clock -period 8 -name default
