@@ -1,11 +1,32 @@
-
-################################################################
-# This is a generated script based on design: design_main
-#
-# Though there are limitations about the generated script,
-# the main purpose of this utility is to make learning
-# IP Integrator Tcl commands easier.
-################################################################
+#////////////////////////////////////////////////////////////////////
+#///                              __                             ////
+#///                             |  |                            ////
+#///                             |  |                            ////
+#///                       ___   |  |                            ////
+#///                   ___ \  \__/  /                            ////
+#///                  /  /  \______/                             ////
+#///                 /  /________________                        ////
+#///                |   _________________|                       ////
+#///                \  \                                         ////
+#///                 \__\ John M Mower                           ////
+#///                                                             ////
+#/// Copyright (C) 2017 - 2022 Susitronix, LLC                   ////
+#///                                                             ////
+#///     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ////
+#/// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   ////
+#/// TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS   ////
+#/// FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR      ////
+#/// OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,         ////
+#/// INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES    ////
+#/// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE   ////
+#/// GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        ////
+#/// BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  ////
+#/// LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT  ////
+#/// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  ////
+#/// OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE         ////
+#/// POSSIBILITY OF SUCH DAMAGE.                                 ////
+#///                                                             ////
+#////////////////////////////////////////////////////////////////////
 
 namespace eval _tcl {
 proc get_script_folder {} {
