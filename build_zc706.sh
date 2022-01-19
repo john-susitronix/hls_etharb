@@ -78,7 +78,7 @@ while : ; do
     sleep 1
 done
 printf "\n"
-cp $sysdef linux
+cp $sysdef linux/main.hdf
 
 pushd linux
 if [ ! -d "./linux_zc706" ] || [ "$force" -gt 0 ]; then
