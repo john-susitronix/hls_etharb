@@ -53,6 +53,7 @@ if ! command -v petalinux-config -h &> /dev/null; then
     exit 1
 fi
 
+pushd hls
 declare -a ListOfHls=("etharb_tx" "eth_tstsrc")
 for n in ${ListOfHls[@]}; do
     pushd $n
@@ -61,6 +62,7 @@ for n in ${ListOfHls[@]}; do
     fi
     popd
 done
+popd
 
 pushd etharb_test
 if [ ! -d "./zc706_etharb" ] || [ "$force" -gt 0 ]; then

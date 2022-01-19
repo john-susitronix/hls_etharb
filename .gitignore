@@ -8,14 +8,7 @@
 /hls/*
 !/hls/*.cpp
 !/hls/*.h
-
-!/etharb_tx/
-/etharb_tx/*
-!/etharb_tx/*.tcl
-
-!/eth_tstsrc/
-/eth_tstsrc/*
-!/eth_tstsrc/*.tcl
+!/hls/*.tcl
 
 !/etharb_test/
 /etharb_test/*
