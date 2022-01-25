@@ -39,6 +39,6 @@
 /linux/recipes-modules/etharbtx/files/*
 !/linux/recipes-modules/etharbtx/files/COPYING
 !/linux/recipes-modules/etharbtx/files/etharbtx.c
-!/linux/recipes-modules/etharbtx/files/*.hil
+!/linux/recipes-modules/etharbtx/files/*.h
 !/linux/recipes-modules/etharbtx/files/Makefile
 
