@@ -16,13 +16,29 @@
 !/etharb_test/*.xdc
 !/etharb_test/*.v
 
-!/python/
-/python/*
-!/python/*.py
-
 !/linux/
 /linux/*
 !/linux/*.dtsi
-!/linux/config_sdcard
+!/linux/rootfs_config
+!/linux/config
+
 !/linux/recipes-kernel/
+/linux/recipes-kernel/*
+!/linux/recipes-kernel/linux/*.bbappend
+!/linux/recipes-kernel/linux/linux-xlnx/
+/linux/recipes-kernel/linux/linux-xlnx/*
+!/linux/recipes-kernel/linux/linux-xlnx/axieth.patch
+!/linux/recipes-kernel/linux/linux-xlnx/*.cfg
+
+!/linux/recipes-modules/
+/linux/recipes-modules/*
+!/linux/recipes-modules/etharbtx/
+/linux/recipes-modules/etharbtx/*
+!/linux/recipes-modules/etharbtx/etharbtx.bb
+!/linux/recipes-modules/etharbtx/files/
+/linux/recipes-modules/etharbtx/files/*
+!/linux/recipes-modules/etharbtx/files/COPYING
+!/linux/recipes-modules/etharbtx/files/etharbtx.c
+!/linux/recipes-modules/etharbtx/files/*.hil
+!/linux/recipes-modules/etharbtx/files/Makefile
 

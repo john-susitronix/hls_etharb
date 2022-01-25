@@ -3,7 +3,7 @@
 };
 
 	&etharb_tx_0 {
-	     compatible = "susi,etharb";
+	     compatible = "susi,etharbtx";
 	};
 
         &axi_ethernet_0 {
