@@ -47,7 +47,7 @@ On the host side, simply use the _quicktest.py_ script in _python/_ to listen fo
 #### NOTES:
 This project requires the Ethernet Subsystem be configured with full checksum offload, and I use larger fifos:
 
-!(https://github.com/john-susitronix/hls_etharb/blob/master/mac.png)
+![plot](./mac.png)
 
 
 
