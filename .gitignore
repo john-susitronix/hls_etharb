@@ -4,6 +4,10 @@
 !README.md
 !/build_zc706.sh
 
+!/python/
+/python/*
+!/python/*.py
+
 !/hls/
 /hls/*
 !/hls/*.cpp
@@ -42,3 +46,15 @@
 !/linux/recipes-modules/etharbtx/files/*.h
 !/linux/recipes-modules/etharbtx/files/Makefile
 
+!/linux/recipes-apps/
+/linux/recipes-apps/*
+!/linux/recipes-apps/etharbtxtest/
+/linux/recipes-apps/etharbtxtest/*
+!/linux/recipes-apps/etharbtxtest/*.bb
+!/linux/recipes-apps/etharbtxtest/README
+/linux/recipes-apps/etharbtxtest/.gdbinit
+!/linux/recipes-apps/etharbtxtest/files/
+/linux/recipes-apps/etharbtxtest/files/*
+!/linux/recipes-apps/etharbtxtest/files/Makefile
+!/linux/recipes-apps/etharbtxtest/files/*.c
+!/linux/recipes-apps/etharbtxtest/files/*.h
