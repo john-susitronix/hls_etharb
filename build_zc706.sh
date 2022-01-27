@@ -75,14 +75,14 @@ if [ ! -d "./linux_zc706" ]; then
 
     petalinux-config --get-hw-description=../ --silentconfig
 
+    petalinux-create -t modules -n etharbtx --enable
+    petalinux-create -t apps -n etharbtxtest --enable
+    
     cp ../system-user.dtsi project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi
     cp -r ../recipes-kernel project-spec/meta-user/
     cp -r ../recipes-modules project-spec/meta-user/
     cp -r ../recipes-apps project-spec/meta-user/
 
-    cp ../config project-spec/configs/
-    cp ../rootfs_config project-spec/configs/
-    
     petalinux-build
     petalinux-package --boot --fsbl images/linux/zynq_fsbl.elf --fpga ../../etharb_test/zc706_etharb/zc706_etharb.runs/impl_1/main.bit --u-boot
     popd
