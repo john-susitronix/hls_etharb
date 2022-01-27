@@ -1,6 +1,7 @@
 # ETHARB_TX
 ## A UDP arbiter for SoC with PL-connected 1G PHY
 #### move data off of the PL-side without a DMA IP
+- note the RX side is not implemented yet
 
 ![plot](./system.png)
 
