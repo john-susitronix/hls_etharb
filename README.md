@@ -35,9 +35,10 @@ Please recall this demo uses jumbo frames, the MTU will need to be set
 
     ifconfig eth0 mtu 9000  #on the host
     
-and on the Zynq (user and password "root", ip is 192.168.1.50):
+and on the Zynq (user and password "root"):
 
     ifconfig eth0 down
+    ifconfig eth0 192.168.1.50 # or whatever
     ifconfig eth0 mtu 9000 up
     
     etharbtxtest
