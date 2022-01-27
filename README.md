@@ -44,4 +44,11 @@ The -i switch will bump the source address and MAC up by one (e.g. 192.168.1.50 
 
 On the host side, simply use the _quicktest.py_ script in _python/_ to listen for 10 seconds on port 8888.  This will give you some statistics - I typically get at least 990 MBps, depending on traffic from the PS.
 
+#### NOTES:
+This project requires the Ethernet Subsystem be configured with full checksum offload, and I use larger fifos:
+
+!(https://github.com/john-susitronix/hls_etharb/blob/master/mac.png)
+
+
+
 Please cite this project if used in research and in production designs, please contact me for my records and feel free to reach out for support!
