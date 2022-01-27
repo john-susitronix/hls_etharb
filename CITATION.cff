@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+abstract: ETHARB_TX, an HLS IP for bypassing PL connected Ethernet.
+authors:
+  - family-names: Mower
+  - given-names: John
+  - name: Etharb_TX
+version: 0.1.0
+date-released: "2022-01-26"
+license: MIT
+repository-code: "https://github.com/john-susitronix/hls_etharb"
