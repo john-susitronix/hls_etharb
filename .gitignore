@@ -2,6 +2,11 @@
 
 !.gitignore
 !README.md
+!License.txt
+!CITATION.cff
+!*.png
+
+
 !/build_zc706.sh
 
 !/python/
@@ -51,7 +56,6 @@
 !/linux/recipes-apps/etharbtxtest/
 /linux/recipes-apps/etharbtxtest/*
 !/linux/recipes-apps/etharbtxtest/*.bb
-!/linux/recipes-apps/etharbtxtest/README
 /linux/recipes-apps/etharbtxtest/.gdbinit
 !/linux/recipes-apps/etharbtxtest/files/
 /linux/recipes-apps/etharbtxtest/files/*
