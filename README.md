@@ -42,4 +42,6 @@ _etharbtxtest_ is a C utility that will set the required registers, via a kernel
     
 The -i switch will bump the source address and MAC up by one (e.g. 192.168.1.50 -> 192.168.1.51 and 00:0A:35:00:22:01 -> 00:0A:35:00:22:02).  There is the remote possibilty that an IPV4 ID field could be used from both devices (PL and etharbt_tx) and if the PS packet was more than the MTU in length, something strange could happen.  It could happen.... but I've not had an issue.  Either way, the -i switch will make the packet look as if it originated from a different source (but the host ARP would be unaware).
 
+On the host side, simply use the _quicktest.py_ script in _python/_ to listen for 10 seconds on port 8888.  This will give you some statistics - I typically get at least 990 MBps, depending on traffic from the PS.
+
 Please cite this project if used in research and in production designs, please contact me for my records and feel free to reach out for support!
