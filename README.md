@@ -3,7 +3,7 @@
 #### move data off of the PL-side without a DMA IP
 - note the RX side is not implemented yet
 
-![plot](./system.png)
+![plot](./img/system.png)
 
 ## --- as demonstrated using the Ethernet FMC project and Xilinx ZC706 --- 
 #### _please see_ https://ethernetfmc.com/ & https://github.com/fpgadeveloper/ethernet-fmc-axi-eth
@@ -13,7 +13,7 @@ In many instances, one simply wishes to collect data and get it off the SoC to a
 - No custom DMA kernel code required (PL DMA Ethernet uses existing drivers)
 - Processor resources are freed-up (interrupts, eth stack, etc.)
 
-![plot](./vivado.png)
+![plot](./img/vivado.png)
 
 The technique presented here could be used with microblaze and using Linux or bare metal.  Zynq and Linux is used here.
 
@@ -53,7 +53,7 @@ On the host side, simply use the _quicktest.py_ script in _python/_ to listen fo
 #### NOTES:
 This project requires the Ethernet Subsystem be configured with full checksum offload, and I use larger fifos:
 
-![plot](./mac.png)
+![plot](./img/mac.png)
 
 
 

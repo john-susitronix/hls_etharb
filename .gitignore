@@ -4,8 +4,10 @@
 !README.md
 !License.txt
 !CITATION.cff
-!*.png
 
+!/img/
+/img/*
+!/img/*.png
 
 !/build_zc706.sh
 
