@@ -1,6 +1,9 @@
 # ETHARB_TX
 ## A UDP arbiter for SoC with PL-connected 1G PHY
 #### move data off of the PL-side without a DMA IP
+
+![plot](./system.png)
+
 ## --- as demonstrated using the Ethernet FMC project and Xilinx ZC706 --- 
 #### _please see_ https://ethernetfmc.com/ & https://github.com/fpgadeveloper/ethernet-fmc-axi-eth
 The Ethernet FMC board has four PHY (this project only uses one) and can be used with a Zynq to connect to the PL-side of the Soc via the GEM (PS) through GMII to RGMII or via a DMA and Ethernet Subsystem IP.
@@ -8,6 +11,8 @@ The Ethernet FMC board has four PHY (this project only uses one) and can be used
 In many instances, one simply wishes to collect data and get it off the SoC to a host as quickly as possible.  The typical paradigm is to have some mechanism that requires a DMA IP to get data to PS RAM and then use software to send it out the wire.  With the ethernet PHY attached to the PL-side, there are two advantages that can be taken: 
 - No custom DMA kernel code required (PL DMA Ethernet uses existing drivers)
 - Processor resources are freed-up (interrupts, eth stack, etc.)
+
+![plot](./vivado.png)
 
 The technique presented here could be used with microblaze and using Linux or bare metal.  Zynq and Linux is used here.
 
