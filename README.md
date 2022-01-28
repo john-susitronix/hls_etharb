@@ -21,7 +21,7 @@ The technique presented here could be used with microblaze and using Linux or ba
 
 I have implemented this process using pure RTL but I thought I should evaluate HLS.  A counter data source IP is also writen using HLS.
 
-#### TO BIULD:
+#### TO BUILD:
 
 This is as simple as sourcing Vivado and Petalinux, here using 2019.1 and then running the _build_zc706.sh_ shell script.  It will first build the _etharb_tx_ and _eth_tstsrc_ IP.  Please note that this current configuration is designed to use jumbo frames, so the host computer will need to be adjusted.  The scrip goes on to build a vivado project and waits for completion.  It then builds a petalinux project copies in the requisite files (including the patch from ethernet-fmc).  It is simply copy BOOT.BIN and image.ub to a SD card.
 
