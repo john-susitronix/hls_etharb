@@ -31,6 +31,8 @@ This is as simple as sourcing Vivado and Petalinux, here using 2019.1 and then r
 
 #### TO TEST:
 
+![plot](./img/zc706.png)
+
 Please recall this demo uses jumbo frames, the MTU will need to be set
 
     ifconfig eth0 mtu 9000  #on the host
