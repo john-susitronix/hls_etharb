@@ -51,6 +51,7 @@ void genericioUdelay(uint32_t usec)
 #ifdef __KERNEL__
   udelay(usec);
 #else
+  // sleazy delay - don't care accuracy
   volatile uint32_t t;
   for (t = 0; t < usec * 1000; t++) {;}
 #endif
